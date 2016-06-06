@@ -3,10 +3,19 @@ import { Component } from '@angular/core';
 
 
 @Component({
-  selector: 'my-app',
-  template: '<h1>The wandering snowman</h1>'
+  selector: 'main-app',
+  template:
+  `
+    <header class="main">
+        <h1>{{pageTitle}}</h1>
+        <p class="subtitle">{{subtitle}}</p>
+    </header>
+  `
 })
 
 
 
-export class AppComponent { }
+export class AppComponent {
+    pageTitle : string = "baseHQ";
+    subtitle : string = "Find Your Home";
+}
