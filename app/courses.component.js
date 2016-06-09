@@ -9,20 +9,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AppComponent = (function () {
-    function AppComponent() {
-        this.title = "baseHQ";
-        this.subtitle = "Find Your Perfect Roommate!";
-        this.names = ["Jeffrey", "Nigel", "Nate"];
+var CoursesComponent = (function () {
+    function CoursesComponent() {
     }
-    AppComponent = __decorate([
+    CoursesComponent = __decorate([
         core_1.Component({
-            selector: 'main-app',
-            template: "\n    <h1>{{title}}</h1>\n    <p>{{subtitle}}</p>\n    <ul>\n        <li *ngFor=\"let name of names\">{{name}}</li>\n    </ul>\n  "
+            selector: "courses",
+            template: "<h1>Courses</h1>"
         }), 
         __metadata('design:paramtypes', [])
-    ], AppComponent);
-    return AppComponent;
+    ], CoursesComponent);
+    return CoursesComponent;
 }());
-exports.AppComponent = AppComponent;
-//# sourceMappingURL=app.component.js.map
+exports.CoursesComponent = CoursesComponent;
+//# sourceMappingURL=courses.component.js.map

@@ -1,21 +1,24 @@
 import { Component } from '@angular/core';
 
-
-
 @Component({
   selector: 'main-app',
-  template:
-  `
-    <header class="main">
-        <h1>{{pageTitle}}</h1>
-        <p class="subtitle">{{subtitle}}</p>
-    </header>
+  template: `
+    <h1>{{title}}</h1>
+    <p>{{subtitle}}</p>
+    <ul>
+        <li *ngFor="let name of names">{{name}}</li>
+    </ul>
   `
 })
 
-
-
 export class AppComponent {
-    pageTitle : string = "baseHQ";
-    subtitle : string = "Find Your Home";
+    title: string;
+    subtitle: string;
+    names: string[];
+
+    constructor(){
+        this.title = "baseHQ";
+        this.subtitle = "Find Your Perfect Roommate!";
+        this.names = ["Jeffrey", "Nigel", "Nate"];
+    }
 }
