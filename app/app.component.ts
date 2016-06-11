@@ -1,14 +1,9 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'main-app',
-  template: `
-    <h1>{{title}}</h1>
-    <p>{{subtitle}}</p>
-    <ul>
-        <li *ngFor="let name of names">{{name}}</li>
-    </ul>
-  `
+    selector: 'main-app',
+    templateUrl: 'app/app.component.html',
+    styleUrls: ['app/app.component.css']
 })
 
 export class AppComponent {

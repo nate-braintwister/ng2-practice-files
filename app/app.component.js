@@ -18,7 +18,8 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'main-app',
-            template: "\n    <h1>{{title}}</h1>\n    <p>{{subtitle}}</p>\n    <ul>\n        <li *ngFor=\"let name of names\">{{name}}</li>\n    </ul>\n  "
+            templateUrl: 'app/app.component.html',
+            styleUrls: ['app/app.component.css']
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
